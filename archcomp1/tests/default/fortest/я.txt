@@ -1,0 +1,30 @@
+segst	segment para stack  'stack'
+	db	64 dup('stack   ')
+segst	ends
+dseg segment 'data'
+p1 DT -27
+p2 DB 7 DUP (' ')
+p3 DB 'sun','star','number'
+p4 DW 51,22,-1,12
+p5 DB 12,?,11
+p6 DT 10*2+5
+dseg ends
+cseg segment
+  assume ds:dseg,cs:cseg,ss:segst
+main proc far
+   push ds
+   sub AX,AX
+   push AX
+   mov ax,dseg
+   mov ds,ax
+   
+   mov AL,-32
+   mov DS,AX
+   mov p3,AX
+   mov [BX],23
+   mov p3,'T'
+   mov AH,BH
+   ret
+main endp
+cseg ends
+end main

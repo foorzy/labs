@@ -1,0 +1,7 @@
+D:\Tests\result\1R.docx
+D:\Tests\result\2arch.pptx
+D:\Tests\result\4arch.zip
+D:\Tests\result\5readonly.xlsx
+D:\Tests\result\7hidden.docx
+D:\Tests\result\folder\3notarch.txt
+D:\Tests\result\folder2\6notarch.pub
